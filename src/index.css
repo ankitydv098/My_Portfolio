@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  overflow-x: hidden;
+  background: #09090b;  /* fallback for old browsers */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.audiowide-regular {
+  font-family: "Audiowide", serif;
+  font-style: normal;
+}
+figure{
+  background: -webkit-linear-gradient(to right, #161616, #2f2f2f2f);  
+  background: linear-gradient(to right, #131313, #2f2f2f); 
+
+}
