@@ -24,3 +24,30 @@ figure{
   background: linear-gradient(to right, #131313, #2f2f2f); 
 
 }
+/* In your CSS file or <style> tag */
+.terminal-link {
+  color: #66ff00; /* Green color for links */
+  text-decoration: none; /* Remove underline initially */
+}
+
+.terminal-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.rotate-y-180 {
+  transform: rotateZ(180deg) scale(250%);
+  filter: contrast(150%);
+}
+
+.popin {
+  animation: popin 0.5s ease-in-out;
+}
+
+@keyframes popin {
+  from {
+    transform: translate(-100%);
+  }
+  to {
+    transform: translate(0%);
+  }
+}
