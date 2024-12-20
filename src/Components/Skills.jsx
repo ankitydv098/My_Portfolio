@@ -14,10 +14,10 @@ const skills = [
   { name: 'CTF Challenges' },
 ];
 
-const SkillTags = () => {
+const Skills = () => {
   return (
     <>
-      <div className="bg-[#09090B] text-white py-12 px-10 mb-12">
+      <div id="skills" className="bg-[#09090B] text-white py-12 px-10 mb-12">
         <h2 className="text-4xl text-white text-center font-medium audiowide-regular mb-12">Skills</h2>
         <div className="max-w-4xl mx-auto flex flex-wrap gap-4 justify-center">
           {skills.map((skill) => (
@@ -38,4 +38,4 @@ const SkillTags = () => {
   );
 };
 
-export default SkillTags;
+export default Skills;
