@@ -3,7 +3,7 @@ import { Github, Mail, FileText } from "lucide-react";
 import { motion } from "framer-motion";
 import profilePic from "../assets/images/profilePic.jpg";
 import profilePicBack from "../assets/images/profilePicBack.png";
-import Resume from "../assets/Resume.pdf";
+
 
 const Hero = () => {
   const gradientTextClass =
@@ -122,9 +122,9 @@ const Hero = () => {
           transition={{ duration: 1, delay: 1.2 }}
         >
           <a
-            href={Resume}
-            target="_blank"
-            download={true}
+            href={"#"}
+            target="_self"
+            download={false}
             rel="noopener noreferrer"
             className="group font-courier font-semibold flex items-center gap-3 px-6 py-3 rounded-full bg-white/5 hover:bg-white/10 transition-all duration-300"
           >
