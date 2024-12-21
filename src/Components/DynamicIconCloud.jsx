@@ -6,7 +6,6 @@ import aircrack from '../assets/images/aircrack.png';
 import amass from '../assets/images/amass.png';
 import beef from '../assets/images/beef.png';
 import burpsuite from '../assets/images/burpsuite.png';
-import docker from '../assets/images/docker.png';
 import ffuf from '../assets/images/ffuf.png';
 import gobuster from '../assets/images/gobuster.png';
 import hashcat from '../assets/images/hashcat.png';
@@ -39,7 +38,6 @@ const DynamicIconCloud = () => {
     <img src={zaproxy} alt="Zaproxy Icon" className="w-12 h-12 object-contain" />,
     <img src={git} alt="git" className="w-12 h-12 object-contain" />,
     <img src={github} alt="github" className="w-12 h-12 object-contain" />,
-    <img src={docker} alt="docker" className="w-12 h-12 object-contain" />,
   ];
 
   return (
