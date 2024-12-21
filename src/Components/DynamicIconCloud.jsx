@@ -24,7 +24,6 @@ const DynamicIconCloud = () => {
     <img src={amass} alt="Amass Icon" className="w-12 h-12 object-contain" />,
     <img src={beef} alt="Beef Icon" className="w-12 h-12 object-contain" />,
     <img src={burpsuite} alt="Burp Suite Icon" className="w-12 h-12 object-contain" />,
-    <img src={docker} alt="Docker Icon" className="w-12 h-12 object-contain" />,
     <img src={ffuf} alt="FFUF Icon" className="w-12 h-12 object-contain" />,
     <img src={gobuster} alt="Gobuster Icon" className="w-12 h-12 object-contain" />,
     <img src={hashcat} alt="Hashcat Icon" className="w-12 h-12 object-contain" />,
