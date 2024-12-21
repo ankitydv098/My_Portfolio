@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="fixed top-0 mb-16 w-screen h-16 bg-[#040711] flex items-center justify-around font-semibold z-30 cursor-default">
+      <div className="fixed top-0 mb-16 w-screen h-16 px-10 bg-[#040711] flex items-center justify-around font-semibold z-30 cursor-default">
         <div className="lg:w-1/3 rounded-md flex items-center gap-2">
 
           <img

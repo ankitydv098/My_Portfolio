@@ -17,6 +17,7 @@ import wireshark from '../assets/images/wireshark.png';
 import zaproxy from '../assets/images/zaproxy.png';
 import git from '../assets/images/git.png';
 import github from '../assets/images/github.png';
+import Python from '../assets/images/python.png';
 
 const DynamicIconCloud = () => {
   const icons = [
@@ -35,6 +36,7 @@ const DynamicIconCloud = () => {
     <img src={zaproxy} alt="Zaproxy Icon" className="w-12 h-12 object-contain" />,
     <img src={git} alt="git" className="w-12 h-12 object-contain" />,
     <img src={github} alt="github" className="w-12 h-12 object-contain" />,
+    <img src={Python} alt="Python" className="w-12 h-12 object-contain" />,
   ];
 
   return (
