@@ -8,6 +8,7 @@ const firstRow = skills.slice(0, skills.length);
 
 const ReviewCard = ({ img, title, description, link, github }) => {
   return (
+
     <figure className="relative h-72 w-72 cursor-pointer overflow-hidden rounded-xl border p-4 border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05] dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15] m-4 hover:scale-110 hover:duration-300 hover:border hover:border-[#31519f]">
       <div className="w-full h-full flex flex-col items-center justify-around gap-2">
         <div className="w-full h-[40%] flex flex-col items-center justify-between">
@@ -32,6 +33,9 @@ const ReviewCard = ({ img, title, description, link, github }) => {
 export default function Projects() {
   return (
     <>
+      <div className="w-full flex justify-center mt-8">
+        <div className="border border-[#27272A] w-[80%]"></div>
+      </div>
       <div id="projects" className="h-24"></div>
 
       <div className="relative lg:w-[75vw] w-[90vw] mx-auto border-0 overflow-hidden rounded-2xl">

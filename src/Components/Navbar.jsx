@@ -17,7 +17,7 @@ function Navbar() {
           <img
             src={profilePicture}
             alt="profilePicture"
-            className="h-10 w-10 border-white rounded-full bg-[#27272A] p-1"
+            className="h-10 w-10 rounded-full border-[#1E293B] border-2"
           />
 
 

@@ -7,6 +7,7 @@ import Footer from "./Components/Footer";
 import Blogs from "./Components/Blogs";
 import TerminalSection from "./Components/TerminalSection";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import DynamicIconCloud from "./Components/DynamicIconCloud";
 
 function App() {
   const router = createBrowserRouter([
@@ -17,6 +18,7 @@ function App() {
           <Navbar />
           <Heros />
           <Projects />
+          <DynamicIconCloud />
           <Skills />
           <Footer />
         </>
@@ -29,6 +31,7 @@ function App() {
           <Navbar />
           <Heros />
           <Projects />
+          <DynamicIconCloud />
           <Skills />
           <Footer />
           <TerminalSection />
