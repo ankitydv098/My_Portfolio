@@ -14,7 +14,6 @@ import hydra from '../assets/images/hydra.png';
 import john from '../assets/images/john.png';
 import linux from '../assets/images/linux.png';
 import metasploit from '../assets/images/metasploit.png';
-import powershell from '../assets/images/powershell.png';
 import python from '../assets/images/python.png';
 import wireshark from '../assets/images/wireshark.png';
 import zaproxy from '../assets/images/zaproxy.png';
@@ -35,7 +34,6 @@ const DynamicIconCloud = () => {
     <img src={john} alt="John the Ripper Icon" className="w-12 h-12 object-contain" />,
     <img src={linux} alt="Linux Icon" className="w-12 h-12 object-contain" />,
     <img src={metasploit} alt="Metasploit Icon" className="w-12 h-12 object-contain" />,
-    <img src={powershell} alt="Powershell Icon" className="w-12 h-12 object-contain" />,
     <img src={python} alt="Python Icon" className="w-12 h-12 object-contain" />,
     <img src={wireshark} alt="Wireshark Icon" className="w-12 h-12 object-contain" />,
     <img src={zaproxy} alt="Zaproxy Icon" className="w-12 h-12 object-contain" />,
