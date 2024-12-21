@@ -41,6 +41,7 @@ const DynamicIconCloud = () => {
     <img src={zaproxy} alt="Zaproxy Icon" className="w-12 h-12 object-contain" />,
     <img src={git} alt="git" className="w-12 h-12 object-contain" />,
     <img src={github} alt="github" className="w-12 h-12 object-contain" />,
+    <img src={docker} alt="docker" className="w-12 h-12 object-contain" />,
   ];
 
   return (
