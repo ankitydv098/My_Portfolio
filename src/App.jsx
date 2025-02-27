@@ -28,31 +28,23 @@ function App() {
       path: "/terminal",
       element: (
         <>
-          <Navbar />
-          <Heros />
-          <Projects />
-          <DynamicIconCloud />
-          <Skills />
-          <Footer />
-          <TerminalSection />
+          <TerminalSection /> {/* ✅ Now Only Terminal Appears */}
         </>
       ),
     },
     {
-      path: '/blogs',
+      path: "/blogs",
       element: (
         <>
+          <Navbar /> {/* ✅ Added Navbar */}
           <Blogs />
+          <Footer /> {/* ✅ Added Footer */}
         </>
-      )
-    }
+      ),
+    },
   ]);
 
-  return (
-    <>
-      <RouterProvider router={router} />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

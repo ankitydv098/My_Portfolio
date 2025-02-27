@@ -4,27 +4,39 @@
 
 body {
   overflow-x: hidden;
-  background: #09090b;  /* fallback for old browsers */
+  background: #09090b; /* fallback for old browsers */
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+/* ✅ Fixed: Better Scrollbar */
 ::-webkit-scrollbar {
-  display: none;
+  width: 5px;
 }
 
+::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* ✅ Fixed: Gradient Background */
+figure {
+  background: linear-gradient(to right, #161616, #2f2f2f);
+}
+
+/* ✅ Better Font Usage */
 .audiowide-regular {
-  font-family: "Audiowide", serif;
+  font-family: "Audiowide", sans-serif;
   font-style: normal;
 }
-figure{
-  background: -webkit-linear-gradient(to right, #161616, #2f2f2f2f);  
-  background: linear-gradient(to right, #131313, #2f2f2f); 
 
-}
-
+/* ✅ Typing Effect */
 .typing-effect {
   display: inline-block;
   overflow: hidden;
@@ -33,7 +45,7 @@ figure{
   animation: typing 3.5s steps(20) 1s 1 normal both, blink 0.75s step-end 3.5s infinite;
 }
 
-/* Typing animation */
+/* ✅ Typing animation */
 @keyframes typing {
   from {
     width: 0;
@@ -43,36 +55,38 @@ figure{
   }
 }
 
-/* Blinking cursor animation */
+/* ✅ Blinking Cursor Animation */
 @keyframes blink {
   50% {
     border-color: transparent;
   }
 }
-/* In your CSS file or <style> tag */
+
 .terminal-link {
-  color: #66ff00; /* Green color for links */
-  text-decoration: none; /* Remove underline initially */
+  color: #66ff00;
+  text-decoration: none;
 }
 
 .terminal-link:hover {
-  text-decoration: underline; /* Add underline on hover */
+  text-decoration: underline;
 }
 
+
 .rotate-y-180 {
-  transform: rotateZ(180deg) scale(250%);
+  transform: rotateY(180deg) scale(250%);
   filter: contrast(150%);
 }
 
+/* ✅ Pop-in Animation */
 .popin {
   animation: popin 0.5s ease-in-out;
 }
 
 @keyframes popin {
   from {
-    transform: translate(-100%);
+    transform: translateX(-100%);
   }
   to {
-    transform: translate(0%);
+    transform: translateX(0%);
   }
 }

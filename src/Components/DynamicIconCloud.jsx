@@ -1,7 +1,7 @@
 import React from 'react';
 import { Cloud } from 'react-icon-cloud';
 
-// importing icons
+// Importing icons
 import aircrack from '../assets/images/aircrack.png';
 import amass from '../assets/images/amass.png';
 import beef from '../assets/images/beef.png';
@@ -21,22 +21,22 @@ import Python from '../assets/images/python.png';
 
 const DynamicIconCloud = () => {
   const icons = [
-    <img src={aircrack} alt="Aircrack Icon" className="w-12 h-12 object-contain" />,
-    <img src={amass} alt="Amass Icon" className="w-12 h-12 object-contain" />,
-    <img src={beef} alt="Beef Icon" className="w-12 h-12 object-contain" />,
-    <img src={burpsuite} alt="Burp Suite Icon" className="w-12 h-12 object-contain" />,
-    <img src={ffuf} alt="FFUF Icon" className="w-12 h-12 object-contain" />,
-    <img src={gobuster} alt="Gobuster Icon" className="w-12 h-12 object-contain" />,
-    <img src={hashcat} alt="Hashcat Icon" className="w-12 h-12 object-contain" />,
-    <img src={hydra} alt="Hydra Icon" className="w-12 h-12 object-contain" />,
-    <img src={john} alt="John the Ripper Icon" className="w-12 h-12 object-contain" />,
-    <img src={linux} alt="Linux Icon" className="w-12 h-12 object-contain" />,
-    <img src={metasploit} alt="Metasploit Icon" className="w-12 h-12 object-contain" />,
-    <img src={wireshark} alt="Wireshark Icon" className="w-12 h-12 object-contain" />,
-    <img src={zaproxy} alt="Zaproxy Icon" className="w-12 h-12 object-contain" />,
-    <img src={git} alt="git" className="w-12 h-12 object-contain" />,
-    <img src={github} alt="github" className="w-12 h-12 object-contain" />,
-    <img src={Python} alt="Python" className="w-12 h-12 object-contain" />,
+    { src: aircrack, alt: "Aircrack Icon" },
+    { src: amass, alt: "Amass Icon" },
+    { src: beef, alt: "BeEF Icon" },
+    { src: burpsuite, alt: "Burp Suite Icon" },
+    { src: ffuf, alt: "FFUF Icon" },
+    { src: gobuster, alt: "Gobuster Icon" },
+    { src: hashcat, alt: "Hashcat Icon" },
+    { src: hydra, alt: "Hydra Icon" },
+    { src: john, alt: "John the Ripper Icon" },
+    { src: linux, alt: "Linux Icon" },
+    { src: metasploit, alt: "Metasploit Icon" },
+    { src: wireshark, alt: "Wireshark Icon" },
+    { src: zaproxy, alt: "Zaproxy Icon" },
+    { src: git, alt: "Git Icon" },
+    { src: github, alt: "GitHub Icon" },
+    { src: Python, alt: "Python Icon" },
   ];
 
   return (
@@ -44,10 +44,12 @@ const DynamicIconCloud = () => {
       <div id="skills" className="h-24"></div>
 
       <div className="w-full flex flex-col items-center">
-      <h2 className="text-4xl text-white text-center font-medium audiowide-regular ">Skills</h2>
+        <h2 className="text-4xl text-white text-center font-medium audiowide-regular">
+          Skills
+        </h2>
 
         {/* Cloud component with Tailwind CSS for scaling */}
-        <div className="transform scale-75"> {/* scale-75 shrinks the cloud */}
+        <div className="transform scale-75">
           <Cloud
             keepStatic={true}
             autoRotate={true}
@@ -56,8 +58,18 @@ const DynamicIconCloud = () => {
             shape="sphere"
           >
             {icons.map((icon, index) => (
-              <a key={index} href="#" onClick={(e) => e.preventDefault()} className="inline-block">
-                {icon}
+              <a
+                key={index}
+                href="#"
+                onClick={(e) => e.preventDefault()}
+                className="inline-block"
+              >
+                <img
+                  key={index}
+                  src={icon.src}
+                  alt={icon.alt}
+                  className="w-12 h-12 object-contain"
+                />
               </a>
             ))}
           </Cloud>

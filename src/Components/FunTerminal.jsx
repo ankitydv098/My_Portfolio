@@ -1,14 +1,14 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { ReactTerminal } from "react-terminal";
 
-import music from "../assets/images/music.mp3";
+
+import music from "../assets/images/music.mp3"; 
 
 // Social Links
 const socialLinks = [
-    "https://x.com/rajveer_01011",
-    "https://www.linkedin.com/in/r4jv33r/",
-    "https://github.com/root-0101",
-    "https://linktr.ee/rajveer_01",
+    "https://x.com/AnkitYadav67393",
+    "https://www.linkedin.com/in/ankit-kumar098",
+    "https://github.com/ankitydv098",
 ];
 
 // Music Placeholder
@@ -31,14 +31,14 @@ const radio = `
        '----------------'
 `;
 
-const FunTerminal = () => {
-    const [output, setOutput] = useState("");
-    const [isPlaying, setIsPlaying] = useState(false);
+function FunTerminal() {
     const audioRef = useRef(null);
+    const [isPlaying, setIsPlaying] = useState(false);
+    const [output, setOutput] = useState(""); // ✅ FIXED: Defined setOutput
 
     const playMusic = () => {
         if (audioRef.current) {
-            audioRef.current.play();
+            audioRef.current.play().catch((err) => console.warn("Autoplay blocked:", err));
             setIsPlaying(true);
         }
         return "🎵 Music is now playing...";
@@ -86,52 +86,52 @@ const FunTerminal = () => {
         play: playMusic,
         pause: pauseMusic,
 
-        blog: () => {
-            return (
-                <pre>
-                    {"You can find my blog at: "}
-                    <a
-                        href="https://medium.com/@shubham_0101"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="terminal-link"
-                    >
-                        https://medium.com/@rajveer_0101
-                    </a>
-                </pre>
-            );
-        },
+        blog: () => (
+            <pre>
+                {"You can find my blog at: "}
+                <a
+                    // href="https://medium.com/@rajveer_0101"
+                    
+                    
+                    
+                    
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="terminal-link"
+                >
+                    {/* https://medium.com/@rajveer_0101 */}
+                </a>
+            </pre>
+        ),
 
         whoami: () => (
             <pre>{`
 ╔═══════════════════════════════════════════════════╗
 ║                  Hello World !!                   ║
-║  I am Rajveer, a web security professional 💻     ║
-║            and a ctf player 🚩                    ║
+║  I am Ankit, a web security professional 💻       ║
+║            and a CTF player 🚩                    ║
 ║  I like identifying vulnerabilities and helping   ║
 ║  organizations reinforce their defenses.          ║
 ╚═══════════════════════════════════════════════════╝`}</pre>
         ),
 
-        social: () => {
-            return (
-                <pre>
-                    {"My social handles:"}
-                    {socialLinks.map((link, index) => (
-                        <div key={index}>
-                            <a
-                                href={link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="terminal-link"
-                            >
-                                {link}
-                            </a>
-                        </div>
-                    ))}
-                </pre>
-            );
-        },
+        social: () => (
+            <pre>
+                {"My social handles:"}
+                {socialLinks.map((link, index) => (
+                    <div key={index}>
+                        <a
+                            href={link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="terminal-link"
+                        >
+                            {link}
+                        </a>
+                    </div>
+                ))}
+            </pre>
+        ),
 
         clear: () => {
             setOutput("");
@@ -221,7 +221,7 @@ const FunTerminal = () => {
                     height: "75vh",
                     overflowY: "auto",
                 }}
-                className="lg:hidden "
+                className="lg:hidden"
             >
                 <ReactTerminal
                     welcomeMessage={welcomeMessage}
@@ -250,6 +250,6 @@ const FunTerminal = () => {
             </div>
         </div>
     );
-};
+}
 
 export default FunTerminal;
